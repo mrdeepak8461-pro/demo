@@ -1,0 +1,345 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif !important;
+}
+
+///var
+$color_1: #2a753d;
+$color_2: #c9d12c;
+$color_3: #94c93d;
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
+//mixing
+
+// *********************************************** start styling
+
+header {
+    .navbar {
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 16px !important;
+                    color: rgba(0, 0, 0, 0.8) !important;
+                    font-weight: 400 !important;
+                    text-transform: capitalize !important;
+                    font-family: "Poppins", sans-serif !important;
+                    cursor: pointer;
+                }
+            }
+        }
+        .search_ico {
+            padding-left: 1rem;
+        }
+    }
+
+    .banner {
+        position: relative;
+        .img_carousel_text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 8%;
+            left: 0%;
+            .container {
+                width: 100%;
+                height: auto;
+                .inner_text {
+                    width: 50%;
+                    .corona_update {
+                        padding: 0.3rem;
+                        display: flex;
+                        align-items: center;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 1.5rem;
+                        a {
+                            padding: 0.5rem 1.8rem;
+                            background-color: $color_1;
+                            border-radius: 1.5rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+                        span {
+                            color: wheat;
+                            font-weight: 600;
+                            padding: 0rem 0.8rem;
+                        }
+                    }
+                    p {
+                        font-weight: 300 !important;
+                        font-size: 2.5rem;
+                        margin-top: 5rem;
+                    }
+                    h1 {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 3.5rem;
+                    }
+                    .btn {
+                        background-color: $color_1;
+                        border-radius: 1.5rem;
+                        padding: 0.6rem 1rem;
+                        color: white;
+                        font-weight: bold;
+                        margin-top: 3rem;
+                        text-transform: uppercase;
+                        i {
+                            margin: 0rem 0.5rem;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//end of header
+
+.sap_products {
+    margin-top: 4rem;
+    .upper_heading_sap_products {
+        p {
+            margin: 0rem;
+            padding: 0rem;
+            color: $color_1;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+    .container {
+        margin-top: 3rem;
+        .row {
+            .col-lg-6 {
+                h2 {
+                    font-weight: 100 !important;
+                    font-size: 2.5rem;
+                    margin-top: 4rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    color: black;
+                    opacity: 0.8;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                }
+                .know_btn {
+                    border: 0.1rem solid black;
+                    border-radius: 1.5rem;
+                    padding: 0.8rem 1rem;
+                }
+                span {
+                    padding: 0.1rem 2rem;
+                }
+                .download {
+                    border-radius: 2rem;
+                    margin-bottom: 1rem;
+                    padding: 0rem;
+                    margin-top: 3rem;
+                    background-color: $color_1;
+                    font-weight: bold;
+                    color: white;
+                    img {
+                        width: 50px;
+                        transform: translateX(4px);
+                    }
+                }
+                .img_section {
+                    .navigation {
+                        a.active {
+                            border: 0.1rem solid $color_1;
+                        }
+                    }
+                }
+
+                .container-fluid {
+                    .thumb_img_list {
+                        text-align: center;
+                    }
+                    .thumb_img_list {
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                display: inline-block;
+                                width: 100px;
+                                height: 100px;
+                                margin: 0rem 0.5rem;
+                                border: 0.1rem solid $color_1;
+                                border-radius: 1rem;
+                                padding: 0.5rem;
+                                cursor: pointer;
+                                img {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} //end of sap_products
+
+.global_pharmaceutical_section {
+    color: white;
+    margin-top: 5rem;
+    padding: 2.5rem 0rem;
+    background-image: url("../img/Assets/vision_bg.jpg");
+    background-size: 100%;
+    span {
+        color: $color_2;
+    }
+    h2 {
+        line-height: 3rem;
+    }
+} //end of global_pharmaceutical_section
+
+.about_us {
+    margin-top: 4rem !important;
+    .row {
+        background-color: $color_2;
+        text-align: justify;
+        .about_con {
+            h3 {
+                font-weight: 600;
+            }
+            p {
+                line-height: 1.8rem;
+            }
+            padding: 2rem;
+        }
+        .img {
+            background-image: url("../img/Assets/about_image.jpg");
+            background-size: 100% 100%;
+        }
+    }
+} //about_us
+
+.customers_feedbacks {
+    margin-top: 4rem;
+    .testimonial_image {
+        display: block;
+        text-align: right;
+        background-color: white;
+        img {
+            transform: translateX(2.4rem);
+        }
+    }
+    .feedback_content {
+        position: relative;
+        z-index: -3;
+        background-color: $color_3;
+        padding: 2rem;
+        h3 {
+            font-size: 2.6rem;
+        }
+        p {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            padding-right: 6rem;
+        }
+        .quote {
+            position: absolute;
+            top: -27%;
+            right: 0%;
+        }
+    }
+} //end of customers_feedbacks
+
+footer {
+    border:1px solid transparent;
+    margin-top: 4rem;
+    background-image: linear-gradient(to right, $color_1 , $color_2);
+    .row {
+        padding: 2rem 0rem;
+        h4 {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        ul {
+            list-style: none;
+            margin: 0rem;
+            padding: 0rem;
+            li{
+                line-height: 2.5rem;
+            }
+        }
+    }
+    .footer_copyright{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+        p{
+            font-weight: bold;
+        }
+    }
+} //end of footer
+
+
+
+// **************************************************End of index page *****************************************
+// **************************************************Start of About us page *****************************************
+
+
+.about_us_page{
+    .about_banner{
+        position: relative;
+        height: 30rem;
+        background:linear-gradient(to right , rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url("../img/Assets/plaster_about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        h3{
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            margin: 5rem;
+            color: white;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+    .about_us{
+        .container{
+            box-shadow: 1px 4px 46px -2px rgba(0,0,0,0.4);
+            padding: 2.6rem;
+            p{
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+// **************************************************End of about_us_page  *****************************************
+// **************************************************Start of presence_page *****************************************
+.presence_page{
+    .main_top{
+        padding:2rem 0rem;
+        text-align: center;
+        h3{
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+    }
+}
