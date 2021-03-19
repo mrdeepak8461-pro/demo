@@ -41,6 +41,33 @@ header .banner {
   position: relative;
 }
 
+header .banner img {
+  height: 90vh;
+}
+
+header .banner .owl-nav {
+  position: absolute;
+  left: 9%;
+  bottom: 2%;
+  outline-style: none !important;
+}
+
+header .banner .owl-nav img {
+  width: 40px;
+  padding: 0rem;
+  height: 50px;
+}
+
+header .banner .owl-nav .owl-prev:hover, header .banner .owl-nav .owl-next:hover {
+  background: none !important;
+  color: red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: red !important;
+}
+
 header .banner .img_carousel_text {
   position: absolute;
   width: 100%;
@@ -178,6 +205,13 @@ header .banner .img_carousel_text .container .inner_text .btn i {
   border: 0.1rem solid #2a753d;
 }
 
+.sap_products .container .row .col-lg-6 .container-fluid #mainImg {
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  margin: auto;
+}
+
 .sap_products .container .row .col-lg-6 .container-fluid .thumb_img_list {
   text-align: center;
 }
@@ -281,7 +315,7 @@ header .banner .img_carousel_text .container .inner_text .btn i {
 
 .customers_feedbacks .feedback_content .quote {
   position: absolute;
-  top: -27%;
+  top: -30%;
   right: 0%;
 }
 

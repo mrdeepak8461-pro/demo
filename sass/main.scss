@@ -47,6 +47,28 @@ header {
 
     .banner {
         position: relative;
+        img{
+            height:90vh;
+        }
+        .owl-nav{
+            position: absolute;
+            left: 9%;
+            bottom: 2%;
+            outline-style: none !important;
+            img{
+                width: 40px;
+                padding: 0rem;
+                height: 50px;
+            }
+            
+            .owl-prev:hover, .owl-next:hover{
+                background: none !important;
+                color: red;
+                transform:scale(1.1);
+                transition: 0.4s;
+                fill: red !important;
+            }
+        }
         .img_carousel_text {
             position: absolute;
             width: 100%;
@@ -170,6 +192,12 @@ header {
                 }
 
                 .container-fluid {
+                    #mainImg{
+                        width: 20rem;
+                        height: 20rem;
+                        display: block;
+                        margin: auto;
+                    }
                     .thumb_img_list {
                         text-align: center;
                     }
@@ -261,7 +289,7 @@ header {
         }
         .quote {
             position: absolute;
-            top: -27%;
+            top: -30%;
             right: 0%;
         }
     }
