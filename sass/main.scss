@@ -25,13 +25,21 @@ a:hover {
 
 // *********************************************** start styling
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $color_3;
+    border-radius: 30px;
+}
+
 header {
     .navbar {
         box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    font-size: 16px !important;
+                    font-size: 14px !important;
                     color: rgba(0, 0, 0, 0.8) !important;
                     font-weight: 400 !important;
                     text-transform: capitalize !important;
@@ -47,24 +55,31 @@ header {
 
     .banner {
         position: relative;
-        img{
-            height:90vh;
+        .owl-carousel {
+            .item {
+                img {
+                    height: 70vh;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
         }
-        .owl-nav{
+        .owl-nav {
             position: absolute;
             left: 9%;
             bottom: 2%;
             outline-style: none !important;
-            img{
+            img {
                 width: 40px;
                 padding: 0rem;
                 height: 50px;
             }
-            
-            .owl-prev:hover, .owl-next:hover{
+
+            .owl-prev:hover,
+            .owl-next:hover {
                 background: none !important;
                 color: red;
-                transform:scale(1.1);
+                transform: scale(1.1);
                 transition: 0.4s;
                 fill: red !important;
             }
@@ -102,7 +117,7 @@ header {
                     p {
                         font-weight: 300 !important;
                         font-size: 2.5rem;
-                        margin-top: 5rem;
+                        margin-top: 1rem;
                     }
                     h1 {
                         font-weight: bold;
@@ -115,7 +130,7 @@ header {
                         padding: 0.6rem 1rem;
                         color: white;
                         font-weight: bold;
-                        margin-top: 3rem;
+                        margin-top: 1rem;
                         text-transform: uppercase;
                         i {
                             margin: 0rem 0.5rem;
@@ -128,9 +143,8 @@ header {
     }
 }
 //end of header
-
 .sap_products {
-    margin-top: 4rem;
+    margin-top: 1rem;
     .upper_heading_sap_products {
         p {
             margin: 0rem;
@@ -146,90 +160,65 @@ header {
             font-weight: 500;
         }
     }
-    .container {
-        margin-top: 3rem;
-        .row {
-            .col-lg-6 {
-                h2 {
-                    font-weight: 100 !important;
-                    font-size: 2.5rem;
-                    margin-top: 4rem;
-                }
-                p {
-                    font-size: 1.2rem;
-                    color: black;
-                    opacity: 0.8;
-                    line-height: 2rem;
-                    margin-bottom: 2rem;
-                }
-                .know_btn {
-                    border: 0.1rem solid black;
-                    border-radius: 1.5rem;
-                    padding: 0.8rem 1rem;
-                }
-                span {
-                    padding: 0.1rem 2rem;
-                }
-                .download {
-                    border-radius: 2rem;
-                    margin-bottom: 1rem;
-                    padding: 0rem;
-                    margin-top: 3rem;
-                    background-color: $color_1;
-                    font-weight: bold;
-                    color: white;
-                    img {
-                        width: 50px;
-                        transform: translateX(4px);
-                    }
-                }
-                .img_section {
-                    .navigation {
-                        a.active {
-                            border: 0.1rem solid $color_1;
-                        }
-                    }
-                }
-
-                .container-fluid {
-                    #mainImg{
-                        width: 20rem;
-                        height: 20rem;
-                        display: block;
-                        margin: auto;
-                    }
-                    .thumb_img_list {
-                        text-align: center;
-                    }
-                    .thumb_img_list {
-                        ul {
-                            list-style: none;
-                            margin: 0;
-                            padding: 0;
-                            li {
-                                display: inline-block;
-                                width: 100px;
-                                height: 100px;
-                                margin: 0rem 0.5rem;
-                                border: 0.1rem solid $color_1;
-                                border-radius: 1rem;
-                                padding: 0.5rem;
-                                cursor: pointer;
-                                img {
-                                    display: block;
-                                }
-                            }
-                        }
-                    }
+    .casting_side {
+        h2 {
+            font-weight: 100 !important;
+            font-size: 2.5rem;
+            margin-top: 4rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: black;
+            opacity: 0.8;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+        .know_btn {
+            border: 0.1rem solid black;
+            border-radius: 1.5rem;
+            padding: 0.8rem 1rem;
+        }
+        span {
+            padding: 0.1rem 2rem;
+        }
+        .download {
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            padding: 0rem;
+            margin-top: 3rem;
+            background-color: $color_1;
+            font-weight: bold;
+            color: white;
+            img {
+                width: 50px;
+                transform: translateX(4px);
+            }
+        }
+    }
+    .img_side{
+        img{
+            margin: auto;
+            text-align: center;
+            display: block;
+        }
+    }
+    .sap_products_footer{
+        .nav-tabs{
+            border:none !important;
+            .nav-item{
+                border:none !important;
+                .nav-link{
+                    border:none !important;
                 }
             }
         }
     }
-} //end of sap_products
+}//end of sap_products
+
 
 .global_pharmaceutical_section {
     color: white;
-    margin-top: 5rem;
+    
     padding: 2.5rem 0rem;
     background-image: url("../img/Assets/vision_bg.jpg");
     background-size: 100%;
@@ -296,9 +285,9 @@ header {
 } //end of customers_feedbacks
 
 footer {
-    border:1px solid transparent;
+    border-bottom: 1px solid $color_1;
     margin-top: 4rem;
-    background-image: linear-gradient(to right, $color_1 , $color_2);
+    background-image: linear-gradient(to right, $color_1, $color_2);
     .row {
         padding: 2rem 0rem;
         h4 {
@@ -309,36 +298,40 @@ footer {
             list-style: none;
             margin: 0rem;
             padding: 0rem;
-            li{
+            li {
                 line-height: 2.5rem;
+                .icons{
+                    i{
+                        margin-right: 0.5rem;
+                        font-size: 1.4rem;
+                    }
+                }
             }
         }
     }
-    .footer_copyright{
+    .footer_copyright {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 1rem 0rem;
-        p{
+        p {
             font-weight: bold;
         }
     }
 } //end of footer
 
-
-
 // **************************************************End of index page *****************************************
 // **************************************************Start of About us page *****************************************
 
-
-.about_us_page{
-    .about_banner{
+.about_us_page {
+    .about_banner {
         position: relative;
         height: 30rem;
-        background:linear-gradient(to right , rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url("../img/Assets/plaster_about.jpg");
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Assets/plaster_about.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        h3{
+        h3 {
             position: absolute;
             bottom: 0%;
             right: 0%;
@@ -348,11 +341,11 @@ footer {
             text-transform: uppercase;
         }
     }
-    .about_us{
-        .container{
-            box-shadow: 1px 4px 46px -2px rgba(0,0,0,0.4);
+    .about_us {
+        .container {
+            box-shadow: 1px 4px 46px -2px rgba(0, 0, 0, 0.4);
             padding: 2.6rem;
-            p{
+            p {
                 line-height: 2rem;
             }
         }
@@ -361,11 +354,11 @@ footer {
 
 // **************************************************End of about_us_page  *****************************************
 // **************************************************Start of presence_page *****************************************
-.presence_page{
-    .main_top{
-        padding:2rem 0rem;
+.presence_page {
+    .main_top {
+        padding: 2rem 0rem;
         text-align: center;
-        h3{
+        h3 {
             font-size: 2.2rem;
             font-weight: 500;
         }
