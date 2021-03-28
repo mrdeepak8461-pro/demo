@@ -20,6 +20,11 @@ a {
 a:hover {
     color: black;
 }
+.line {
+    border: 2px solid $color_1;
+    width: 80px;
+    margin: 1.4rem auto;
+}
 
 //mixing
 
@@ -195,30 +200,29 @@ header {
             }
         }
     }
-    .img_side{
-        img{
+    .img_side {
+        img {
             margin: auto;
             text-align: center;
             display: block;
         }
     }
-    .sap_products_footer{
-        .nav-tabs{
-            border:none !important;
-            .nav-item{
-                border:none !important;
-                .nav-link{
-                    border:none !important;
+    .sap_products_footer {
+        .nav-tabs {
+            border: none !important;
+            .nav-item {
+                border: none !important;
+                .nav-link {
+                    border: none !important;
                 }
             }
         }
     }
-}//end of sap_products
-
+} //end of sap_products
 
 .global_pharmaceutical_section {
     color: white;
-    
+
     padding: 2.5rem 0rem;
     background-image: url("../img/Assets/vision_bg.jpg");
     background-size: 100%;
@@ -300,8 +304,8 @@ footer {
             padding: 0rem;
             li {
                 line-height: 2.5rem;
-                .icons{
-                    i{
+                .icons {
+                    i {
                         margin-right: 0.5rem;
                         font-size: 1.4rem;
                     }
@@ -323,44 +327,222 @@ footer {
 // **************************************************End of index page *****************************************
 // **************************************************Start of About us page *****************************************
 
-.about_us_page {
-    .about_banner {
-        position: relative;
-        height: 30rem;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+.product_page {
+    .banner {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
             url("../img/Assets/plaster_about.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        h3 {
-            position: absolute;
-            bottom: 0%;
-            right: 0%;
-            margin: 5rem;
-            color: white;
-            font-size: 3rem;
-            text-transform: uppercase;
+        background-size: 100%;
+        height: 70vh;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    } //end of banner
+    .company_makes {
+        margin: 3rem 0rem;
+        strong {
+            color: #2a753d;
+        }
+        p {
+            margin: 2rem 0rem;
+            font-size: 1rem;
+            text-align: center;
+            color: gray;
+        }
+        h4 {
+            font-weight: bold;
+            color: $color_1;
+            font-size: 1.8rem;
         }
     }
-    .about_us {
-        .container {
-            box-shadow: 1px 4px 46px -2px rgba(0, 0, 0, 0.4);
-            padding: 2.6rem;
-            p {
-                line-height: 2rem;
+    .sap_products {
+        .tab-content {
+            margin: 3rem auto;
+            h3 {
+                font-family: "NanumSquareR", Arial, Tahoma, sans-serif;
+                font-weight: bold;
+                font-size: 2.3rem;
+            }
+            .sap_products_box {
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("../img/Assets/product_bg_img3.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                margin: 3rem 0rem;
+                .left {
+                    background-color: $color_3;
+                }
+                .right {
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 4rem;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .top_h4 {
+                    background-color: $color_1;
+                    width: 100%;
+                    margin: 0rem;
+                    h4 {
+                        font-weight: bold;
+                        text-align: center;
+                        color: white;
+                        padding: 0.5rem 0rem;
+                    }
+                }
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+        .ul_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                border: none;
+                li {
+                    a {
+                        border: none;
+                        border: 1px solid $color_2;
+                        margin: 1rem;
+                    }
+                    a:hover {
+                        border: 1px solid $color_1;
+                        transition: 0.3s;
+                    }
+                }
             }
         }
     }
 }
 
-// **************************************************End of about_us_page  *****************************************
-// **************************************************Start of presence_page *****************************************
-.presence_page {
-    .main_top {
-        padding: 2rem 0rem;
-        text-align: center;
-        h3 {
-            font-size: 2.2rem;
-            font-weight: 500;
+// **************************************************End of product_page *****************************************
+// **************************************************Start of contect_us_page *****************************************
+
+.contect_us_page {
+    .banner {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../img/Assets/plaster_about.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 70vh;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    } //end of banner
+    .company_makes {
+        margin: 3rem 0rem;
+        strong {
+            color: #2a753d;
         }
+        p {
+            margin: 2rem 0rem;
+            font-size: 1rem;
+            text-align: center;
+            color: gray;
+        }
+        h4 {
+            font-weight: bold;
+            color: $color_1;
+            font-size: 1.8rem;
+        }
+    }
+    .address {
+        background-color: #f5f6f7;
+        padding: 1.5rem;
+        h2 {
+            font-weight: bold;
+        }
+        .row {
+            i {
+                font-size: 1.5rem;
+                color: black;
+            }
+            div {
+                margin: 1rem 0rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .icons {
+                    i {
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        input {
+            padding: 0.8rem;
+        }
+        .btn {
+            background-color: $color_1;
+            border-radius: 1.5rem;
+            padding: 0.6rem 1rem;
+            color: white;
+
+            margin-top: 1rem;
+            text-transform: uppercase;
+            i {
+                margin: 0rem 0.5rem;
+                font-weight: bolder;
+            }
+        }
+    }
+    .map {
+        margin: 2rem 0rem 0rem 0rem;
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+} //end of contect_us_page
+
+// **************************************************End of contect_us_page *****************************************
+// **************************************************Start of about_us_page *****************************************
+
+.about_us_page {
+    .banner {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../img/Assets/plaster_about.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 70vh;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    } //end of banner
+    .h2 {
+        font-weight: bold;
+        color: $color_1;
+        font-size: 2.3rem;
+        margin: 3rem 0rem;
+    }
+    p{
+        font-weight: 500;
+        color: black;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+    .video{
+        margin-top: 5rem;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
     }
 }
