@@ -54,10 +54,6 @@ header {
                     cursor: pointer;
                 }
             }
-            .nav-item:hover{
-                border-bottom:2px solid $color_1;
-                transition: 0.3s;
-            }
         }
         .search_ico {
             padding-left: 1rem;
@@ -538,15 +534,13 @@ footer {
             width: 60%;
         }
         .container {
-            // strong{
-            //     color: red;
-            // }
             .tital_about {
                 font-size: 32px;
                 line-height: 36px;
                 color: #222222;
                 text-transform: capitalize;
                 margin-bottom: 20px;
+              font-weight: bold;
             }
             .text_info {
                 h4 {
