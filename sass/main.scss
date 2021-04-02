@@ -40,10 +40,11 @@ body::-webkit-scrollbar-thumb {
 
 header {
     .navbar {
-        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+        background-color: white !important;
         .navbar-nav {
             .nav-item {
-                border-bottom:2px solid transparent;
+                border-bottom: 2px solid transparent;
                 margin-left: 0.5rem;
                 .nav-link {
                     font-size: 14px !important;
@@ -540,7 +541,7 @@ footer {
                 color: #222222;
                 text-transform: capitalize;
                 margin-bottom: 20px;
-              font-weight: bold;
+                font-weight: bold;
             }
             .text_info {
                 h4 {
